@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 class SouthkoreaController extends Controller
 {
     public function Home(){
-        return view('index');
+        $title="South Korea";
+        return view('index',compact('title'));
     }
 }
