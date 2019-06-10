@@ -10,7 +10,7 @@
                     <h5 class="header col s12 light">Sites you can visit</h5>
                 </div>
                 <div class="row center">
-                    <a href="" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Tours</a>
+                    <a href="{{route('route.visit')}}" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Tours</a>
                 </div>
                 <br><br>
 

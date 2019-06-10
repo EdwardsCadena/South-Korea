@@ -18,7 +18,7 @@
         <a class="item" href="{{route('route.index')}}">
             <i class="home icon"></i> South Korea
         </a>
-        <a class="item" href="">
+        <a class="item" href="{{route('route.visit')}}">
             <i class="eye outline icon"></i> Monuments
         </a>
         <a class="item" href="{{route('route.food')}}">
