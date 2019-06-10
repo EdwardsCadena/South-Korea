@@ -8,7 +8,9 @@
     <title>{!! $title !!}</title>
     <link rel="icon" href="coreasurbandera.ico">
     <!--cdn de Fomantic Ui-->
-
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.7.5/dist/semantic.min.css">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
 <div class="ui attached red inverted stackable  menu">
@@ -19,7 +21,7 @@
         <a class="item" href="">
             <i class="eye outline icon"></i> Monuments
         </a>
-        <a class="item" href="">
+        <a class="item" href="{{route('route.food')}}">
             <i class="drumstick bite icon"></i> Feeding
         </a>
 
@@ -30,22 +32,11 @@
 
 @yield('contenido')
 
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.7.5/dist/semantic.min.css">
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.7.5/dist/semantic.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
 
-
-
-
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        var elems = document.querySelectorAll('.parallax');
-        var instances = M.Parallax.init(elems, options);
-    });</script>
-<script>
-    $(document).ready(function(){
-        $('.parallax').parallax();
-    });
-</script>
 </body>
 </html>

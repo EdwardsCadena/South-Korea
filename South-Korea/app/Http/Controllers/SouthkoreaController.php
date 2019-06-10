@@ -10,4 +10,8 @@ class SouthkoreaController extends Controller
         $title="South Korea";
         return view('index',compact('title'));
     }
+    public function fedding(){
+        $title="Fedding";
+        return view('food',compact('title'));
+    }
 }
